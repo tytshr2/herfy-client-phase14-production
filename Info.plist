@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>ar_SA</string>
+	
+	<key>CFBundleDisplayName</key>
+	<string>Herfy Client</string>
+	
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	
+	<!-- OpenAI/ChatGPT Configuration -->
+	<key>OPENAI_CLIENT_ID</key>
+	<string>YOUR_OPENAI_CLIENT_ID</string>
+	
+	<key>OPENAI_API_KEY</key>
+	<string>YOUR_OPENAI_API_KEY</string>
+	
+	<!-- URL Schemes for OAuth -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>OpenAI Auth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>herfyclient</string>
+			</array>
+		</dict>
+	</array>
+	
+	<!-- App Permissions -->
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>يحتاج التطبيق للوصول إلى الشبكة المحلية</string>
+	
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_herfy._tcp</string>
+	</array>
+	
+	<!-- Privacy -->
+	<key>NSCameraUsageDescription</key>
+	<string>يحتاج التطبيق للوصول إلى الكاميرا</string>
+	
+	<key>NSMicrophoneUsageDescription</key>
+	<string>يحتاج التطبيق للوصول إلى الميكروفون</string>
+	
+	<!-- Appearance -->
+	<key>UIUserInterfaceStyle</key>
+	<string>Dark</string>
+	
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>
